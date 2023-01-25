@@ -125,7 +125,7 @@ function updateSetting() {
   setCookies(...Object.values(currSetting));
 }
 
-function setCookies(color = "red", font = "kumbh", daysToLive = 1) {
+function setCookies(font = "kumbh", color = "red", daysToLive = 1) {
   if (!navigator.cookieEnabled) return;
   const date = new Date();
   date.setTime(date.getTime() + daysToLive * 24 * 60 * 60 * 1000);
