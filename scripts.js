@@ -181,7 +181,7 @@ $(document).ready(function () {
     }
 
     if (isTimerActive || !timer) {
-      timer = setInterval(runTimer, 100);
+      timer = setInterval(runTimer, 1000);
     } else {
       clearInterval(timer);
     }
