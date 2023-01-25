@@ -27,7 +27,7 @@ const timeSetting = {
   long: 15,
 };
 
-const currSetting = {};
+const currSetting = { font: "kumbh", color: "red" };
 
 let isTimerActive = false;
 let isTimeout = false;
@@ -150,8 +150,6 @@ $(document).ready(function () {
 
   if (document.cookie) getCookies();
   else {
-    currSetting["color"] = "red";
-    currSetting["font"] = "kumbh";
     setCookies();
   }
 
